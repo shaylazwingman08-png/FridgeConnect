@@ -19,26 +19,28 @@ export default function Navigation() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
-        <Link href="/" data-testid="link-home">
-          <a className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2 -ml-3">
-            <span className="font-heading text-xl font-bold text-primary">Chapel Hill Community Fridges</span>
-          </a>
+        <Link 
+          href="/" 
+          data-testid="link-home"
+          className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2 -ml-3"
+        >
+          <span className="font-heading text-xl font-bold text-primary">Chapel Hill Community Fridges</span>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => (
-            <Link key={link.path} href={link.path}>
-              <a
-                data-testid={`link-${link.label.toLowerCase().replace(" ", "-")}`}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover-elevate ${
-                  isActive(link.path)
-                    ? "bg-accent text-accent-foreground"
-                    : "text-foreground"
-                }`}
-              >
-                {link.label}
-              </a>
+            <Link 
+              key={link.path} 
+              href={link.path}
+              data-testid={`link-${link.label.toLowerCase().replace(/ /g, "-")}`}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover-elevate ${
+                isActive(link.path)
+                  ? "bg-accent text-accent-foreground"
+                  : "text-foreground"
+              }`}
+            >
+              {link.label}
             </Link>
           ))}
         </div>
@@ -60,18 +62,18 @@ export default function Navigation() {
         <div className="md:hidden border-t bg-background">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-2">
             {navLinks.map((link) => (
-              <Link key={link.path} href={link.path}>
-                <a
-                  onClick={() => setMobileMenuOpen(false)}
-                  data-testid={`link-mobile-${link.label.toLowerCase().replace(" ", "-")}`}
-                  className={`block px-4 py-3 rounded-md text-base font-medium hover-elevate ${
-                    isActive(link.path)
-                      ? "bg-accent text-accent-foreground"
-                      : "text-foreground"
-                  }`}
-                >
-                  {link.label}
-                </a>
+              <Link 
+                key={link.path} 
+                href={link.path}
+                onClick={() => setMobileMenuOpen(false)}
+                data-testid={`link-mobile-${link.label.toLowerCase().replace(/ /g, "-")}`}
+                className={`block px-4 py-3 rounded-md text-base font-medium hover-elevate ${
+                  isActive(link.path)
+                    ? "bg-accent text-accent-foreground"
+                    : "text-foreground"
+                }`}
+              >
+                {link.label}
               </Link>
             ))}
           </div>
