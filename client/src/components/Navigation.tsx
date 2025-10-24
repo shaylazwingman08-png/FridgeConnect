@@ -9,9 +9,9 @@ export default function Navigation() {
 
   const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "About Us" },
-    { path: "/chapel-hill", label: "Chapel Hill" },
-    { path: "/unc", label: "UNC" },
+    { path: "/about", label: "How it Works" },
+    { path: "/chapel-hill", label: "Chapel Hill Fridge" },
+    { path: "/unc", label: "UNC Union Fridge" },
   ];
 
   const isActive = (path: string) => location === path;
@@ -21,7 +21,7 @@ export default function Navigation() {
       <nav className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
         <Link href="/" data-testid="link-home">
           <a className="flex items-center gap-2 hover-elevate rounded-md px-3 py-2 -ml-3">
-            <span className="font-heading text-xl font-bold text-primary">Community Fridges</span>
+            <span className="font-heading text-xl font-bold text-primary">Chapel Hill Community Fridges</span>
           </a>
         </Link>
 
