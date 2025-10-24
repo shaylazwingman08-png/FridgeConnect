@@ -138,7 +138,7 @@ export default function UNC() {
         </div>
       </section>
 
-      {/* Contact Form */}
+      {/* UNC Fridge Airtable Submissions */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto max-w-3xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-4 text-center">Get in Touch</h2>
@@ -154,9 +154,29 @@ export default function UNC() {
               height="533" 
               style={{ background: 'transparent', border: '1px solid #ccc' }}
             />
-          </div>
-        </div>
-      </section>
+      
+
+      {/* UNC Fridge Airtable Form Population */}
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto max-w-3xl px-4 md:px-6">
+          <h2 className="font-heading text-3xl font-semibold mb-4 text-center">Check on Fridge</h2>
+          <p className="text-muted-foreground text-center mb-8">
+            See current fridge contents!
+          </p>
+          <div className="rounded-lg overflow-hidden border">
+             <iframe 
+               class="airtable-embed" 
+               src="https://airtable.com/embed/appJuNvCqQkOpOqjC/shr2mPqmXSX630nRg?viewControls=on" 
+               frameborder="0" 
+               onmousewheel="" 
+               width="100%" 
+               height="533" 
+               style={{ background: 'transparent', border: '1px solid #ccc' }}
+               />
+            </div>
+             </section>
+             </div>
+      
 
       {/* Photo Gallery */}
       <section className="py-16 md:py-20 bg-card">
