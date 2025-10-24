@@ -19,23 +19,39 @@ export default function Footer() {
             <h3 className="font-heading text-lg font-semibold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" data-testid="link-footer-home">
-                  <a className="text-muted-foreground hover:text-foreground transition-colors">Home</a>
+                <Link 
+                  href="/" 
+                  data-testid="link-footer-home"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" data-testid="link-footer-about">
-                  <a className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
+                <Link 
+                  href="/about" 
+                  data-testid="link-footer-about"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/chapel-hill" data-testid="link-footer-chapel-hill">
-                  <a className="text-muted-foreground hover:text-foreground transition-colors">Chapel Hill Location</a>
+                <Link 
+                  href="/chapel-hill" 
+                  data-testid="link-footer-chapel-hill"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Chapel Hill Location
                 </Link>
               </li>
               <li>
-                <Link href="/unc" data-testid="link-footer-unc">
-                  <a className="text-muted-foreground hover:text-foreground transition-colors">UNC Location</a>
+                <Link 
+                  href="/unc" 
+                  data-testid="link-footer-unc"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  UNC Location
                 </Link>
               </li>
             </ul>
