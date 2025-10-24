@@ -137,8 +137,28 @@ export default function ChapelHill() {
         </div>
       </section>
 
-      {/* Photo Gallery */}
+      {/* Contact Form */}
       <section className="py-16 md:py-20">
+        <div className="container mx-auto max-w-3xl px-4 md:px-6">
+          <h2 className="font-heading text-3xl font-semibold mb-4 text-center">Get in Touch</h2>
+          <p className="text-muted-foreground text-center mb-8">
+            Have questions, feedback, or want to help maintain this fridge? Let us know!
+          </p>
+          <div className="rounded-lg overflow-hidden border">
+            <iframe 
+              className="airtable-embed" 
+              src="https://airtable.com/embed/appJuNvCqQkOpOqjC/pag9trJxPjBVtp03i/form" 
+              frameBorder="0" 
+              width="100%" 
+              height="533" 
+              style={{ background: 'transparent', border: '1px solid #ccc' }}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <section className="py-16 md:py-20 bg-card">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Gallery</h2>
           <div className="grid gap-4 md:grid-cols-2">
