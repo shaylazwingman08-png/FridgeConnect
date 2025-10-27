@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { MapPin, Clock, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -28,6 +29,8 @@ const locationGuidelines = [
 ];
 
 export default function ChapelHill() {
+  const [showCheckIn, setShowCheckIn] = useState(false);
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Location Hero */}
@@ -70,8 +73,11 @@ export default function ChapelHill() {
                 variant="default"
                 size="lg"
                 onClick={() => {
-                  const checkInForm = document.querySelector('[data-testid="iframe-airtable-form-2"]');
-                  checkInForm?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  setShowCheckIn(true);
+                  setTimeout(() => {
+                    const checkInForm = document.querySelector('[data-testid="iframe-airtable-form-2"]');
+                    checkInForm?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }, 100);
                 }}
                 data-testid="button-check-in"
               >
@@ -79,17 +85,19 @@ export default function ChapelHill() {
               </Button>
             </div>
 
-            <div id="check-in-form" className="rounded-lg overflow-hidden border">
-              <iframe 
-                className="airtable-embed" 
-                src="https://airtable.com/embed/applVpNxTchBzWog8/pag5Wkg50K3eraOQy/form" 
-                frameBorder="0" 
-                width="100%" 
-                height="533" 
-                style={{ background: 'transparent', border: '1px solid #ccc' }}
-                data-testid="iframe-airtable-form-2"
-              />
-            </div>
+            {showCheckIn && (
+              <div id="check-in-form" className="rounded-lg overflow-hidden border">
+                <iframe 
+                  className="airtable-embed" 
+                  src="https://airtable.com/embed/applVpNxTchBzWog8/pag5Wkg50K3eraOQy/form" 
+                  frameBorder="0" 
+                  width="100%" 
+                  height="533" 
+                  style={{ background: 'transparent', border: '1px solid #ccc' }}
+                  data-testid="iframe-airtable-form-2"
+                />
+              </div>
+            )}
           </div>
         </div>
       </section>
