@@ -27,7 +27,7 @@ export default function GetInvolved() {
               </div>
               <h3 className="font-heading text-xl font-semibold mb-3">Donate Food</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Drop off fresh produce, prepared meals, or non-perishable items at either location.
+                Drop off fresh produce or prepared meals at either location.
               </p>
             </div>
 
@@ -37,7 +37,7 @@ export default function GetInvolved() {
               </div>
               <h3 className="font-heading text-xl font-semibold mb-3">Volunteer</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Help with fridge maintenance, cleaning, and organization. Fill out a form below!
+                Join MAWG and help with donation outreach and fridge network expansion, or volunteer when you have time with donation pick-up and fridge cleaning. Fill out a form below!
               </p>
             </div>
 
@@ -47,73 +47,44 @@ export default function GetInvolved() {
               </div>
               <h3 className="font-heading text-xl font-semibold mb-3">Donate Funds</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Support our mutual aid fund to help us maintain and expand the fridges.
+                Support our mutual aid fund to help us invest in community projects. Link below!
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Volunteer Forms */}
+      {/* Volunteer Interest Form */}
       <section className="py-16 md:py-20 bg-card">
-        <div className="container mx-auto max-w-5xl px-4 md:px-6">
+        <div className="container mx-auto max-w-3xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Volunteer Opportunities</h2>
           
-          <div className="grid gap-8 md:grid-cols-2">
-            <Card>
-              <CardHeader>
-                <CardTitle>Fridge Cleaning & Maintenance</CardTitle>
-                <CardDescription>
-                  Sign up for a shift to help clean and maintain our community fridges
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  We need volunteers to help keep our fridges clean and organized. Tasks include wiping down shelves, checking expiration dates, and ensuring everything is in good condition.
-                </p>
-                <Button 
-                  asChild
-                  className="w-full"
-                  data-testid="button-cleaning-form"
+          <Card>
+            <CardHeader>
+              <CardTitle>General Volunteer Interest</CardTitle>
+              <CardDescription>
+                Express interest in volunteering and we'll reach out with opportunities
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground mb-4">
+                Not sure how you want to help yet? Fill out this form and we'll connect you with volunteer opportunities that match your interests and availability.
+              </p>
+              <Button 
+                asChild
+                className="w-full"
+                data-testid="button-interest-form"
+              >
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfTmPQlzgOJOocD5YFb1MAeXZ5_-nWpAecTkDuuAj71hsjlSQ/viewform" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                 >
-                  <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScf8Vq98IfiuGcWQxKKD0N0HyyEjTwbsAh42wzJkxcGDGXCdQ/viewform" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    Sign Up for Cleaning <ExternalLink className="ml-2 w-4 h-4" />
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>General Volunteer Interest</CardTitle>
-                <CardDescription>
-                  Express interest in volunteering and we'll reach out with opportunities
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Not sure how you want to help yet? Fill out this form and we'll connect you with volunteer opportunities that match your interests and availability.
-                </p>
-                <Button 
-                  asChild
-                  className="w-full"
-                  data-testid="button-interest-form"
-                >
-                  <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfTmPQlzgOJOocD5YFb1MAeXZ5_-nWpAecTkDuuAj71hsjlSQ/viewform" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    Express Interest <ExternalLink className="ml-2 w-4 h-4" />
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
+                  Express Interest <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -145,6 +116,40 @@ export default function GetInvolved() {
                   rel="noopener noreferrer"
                 >
                   Donate Now <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Current Volunteer Cleaning Form */}
+      <section className="py-16 md:py-20 bg-card">
+        <div className="container mx-auto max-w-3xl px-4 md:px-6">
+          <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Current Volunteer Cleaning Form</h2>
+          
+          <Card>
+            <CardHeader>
+              <CardTitle>Fridge Cleaning & Maintenance</CardTitle>
+              <CardDescription>
+                Sign up for a shift to help clean and maintain our community fridges
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground mb-4">
+                We need volunteers to help keep our fridges clean and organized. Tasks include wiping down shelves, checking expiration dates, and ensuring everything is in good condition.
+              </p>
+              <Button 
+                asChild
+                className="w-full"
+                data-testid="button-cleaning-form"
+              >
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScf8Vq98IfiuGcWQxKKD0N0HyyEjTwbsAh42wzJkxcGDGXCdQ/viewform" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Sign Up for Cleaning <ExternalLink className="ml-2 w-4 h-4" />
                 </a>
               </Button>
             </CardContent>
