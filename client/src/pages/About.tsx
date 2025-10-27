@@ -8,16 +8,16 @@ const howItWorksList = [
     points: [
       "No ID required, no questions asked",
       "Take what you need for you and your family",
-      "Check expiration dates before taking items",
+      "Some of the food is past the best-by date, but still has a few days until going bad. Use your best judgement, and throw out any food with signs of spoiling. ",
       "Help keep items organized for others"
     ]
   },
   {
     title: "Giving Food",
     points: [
-      "Donate fresh, unexpired food you'd eat yourself",
+      "Donate fresh food you'd eat yourself",
       "Package items in clean, sealed containers",
-      "Label homemade items with date and ingredients",
+      "Label homemade items with ingredients, date and any allergens",
       "Avoid items in glass containers when possible"
     ]
   }
@@ -28,15 +28,16 @@ const acceptedItems = [
   "Prepared meals in sealed containers",
   "Dairy products (milk, cheese, yogurt)",
   "Eggs and bread",
-  "Canned and packaged foods",
   "Beverages and drinks"
 ];
 
 const notAccepted = [
   "Expired or spoiled food",
+  "Leftovers you have eaten from",
   "Items in glass containers",
   "Opened packages",
-  "Alcohol or tobacco products"
+  "Alcohol or tobacco products",
+  "Raw meat or poultry"
 ];
 
 const getInvolvedOptions = [
@@ -83,13 +84,13 @@ export default function About() {
           <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-6">Our Story</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Food insecurity affects millions of people across the United States, including right here in our own community. Too often, those who need help face barriers like stigma, complicated applications, or limited hours.
+              1 in 10 residents of Orange County experience food insecurity annually, and 1 in 5 students at UNC Chapel Hill have experienced food insecurity in the past month. While around 40% of the US food supply is wasted, our neighbors are going hungry.
             </p>
             <p>
-              That's why we created the Community Fridges project. Our fridges are available 24/7, require no paperwork or proof of need, and operate on a simple principle: take what you need, leave what you can.
+              That's why the Mutual Aid Working Group (MAWG), a community of students at UNC Chapel Hill, founded the Chapel Hill Community Fridge network in 2024. Our fridges save and redistribute surplus food from local sources, providing free, accessible meals to the community. We require no paperwork, idendification, or proof of need and operate on a simple principle: take what you need, leave what you can.
             </p>
             <p>
-              What started as a grassroots effort to address food waste and food insecurity has grown into a thriving mutual aid network. Our fridges are stocked daily by community members who believe in taking care of each other.
+              What began as a grassroots effort to address food insecurity and food waste has grown into a network of two fridges, with our second fridge added to the UNC Student Union in 2025. Our fridges are stocked and cleaned multiple times per week by students and community members who believe in taking care of each other without conditions. If you would like to help in any way, please visit our 'Get Involved' page.
             </p>
           </div>
         </div>
