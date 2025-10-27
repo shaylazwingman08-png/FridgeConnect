@@ -1,25 +1,8 @@
 import { useState } from "react";
 import { MapPin, Clock, Phone } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import GuidelinesList from "@/components/GuidelinesList";
 import chapelHillImage from '@assets/generated_images/Chapel_Hill_fridge_location_2bd035ac.png';
-
-const acceptedItems = [
-  "Fresh fruits and vegetables",
-  "Prepared meals in sealed containers",
-  "Dairy products (milk, cheese, yogurt)",
-  "Eggs and bread",
-  "Canned and packaged foods",
-  "Beverages and drinks"
-];
-
-const notAccepted = [
-  "Expired or spoiled food",
-  "Items in glass containers",
-  "Opened packages",
-  "Alcohol or tobacco products"
-];
 
 const locationGuidelines = [
   "Parking available on Main Street and surrounding side streets",
@@ -155,43 +138,6 @@ export default function ChapelHill() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Accepted Items */}
-      <section className="py-16 md:py-20 bg-card">
-        <div className="container mx-auto max-w-5xl px-4 md:px-6">
-          <h2 className="font-heading text-3xl font-semibold mb-8 text-center">What You Can Donate</h2>
-          
-          <div className="grid gap-8 md:grid-cols-2">
-            <Card>
-              <CardContent className="pt-6">
-                <h3 className="font-heading text-xl font-semibold mb-4 text-primary">✓ Accepted Items</h3>
-                <ul className="space-y-2">
-                  {acceptedItems.map((item, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="pt-6">
-                <h3 className="font-heading text-xl font-semibold mb-4 text-destructive">✗ Please Don't Donate</h3>
-                <ul className="space-y-2">
-                  {notAccepted.map((item, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-destructive mt-1">•</span>
-                      <span className="text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
