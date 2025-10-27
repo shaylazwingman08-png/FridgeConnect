@@ -18,8 +18,8 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Hero
         imageSrc={heroImage}
-        title="Nourishing Our Community Together"
-        subtitle="Free, accessible food for everyone. No questions asked, no judgment. Take what you need, leave what you can."
+        title="Feeding our neighbors together."
+        subtitle="Free, accessible food without questions or judgement. Take what you need, leave what you can."
       />
 
       {/* Location Cards */}
@@ -33,8 +33,8 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
             <LocationCard
               title="Chapel Hill Fridge"
-              address="123 Main Street, Chapel Hill, NC 27514"
-              hours="Open 24/7"
+              address="125 West Main Suite 208, Carrboro, NC 27510 (above Community Worx)"
+              hours="Monday, Tuesday, Thursday: 10:30 AM - 4:30 PM | Wednesday: 10:30 AM - 2:30 PM"
               link="/chapel-hill"
             />
             <LocationCard
