@@ -3,6 +3,8 @@ import LocationCard from "@/components/LocationCard";
 import HowItWorks from "@/components/HowItWorks";
 import ImpactStats from "@/components/ImpactStats";
 import GuidelinesList from "@/components/GuidelinesList";
+import { Button } from "@/components/ui/button";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import heroImage from '@assets/generated_images/Community_members_at_fridge_hero_a53330b8.png';
 
 const communityGuidelines = [
@@ -64,6 +66,44 @@ export default function Home() {
           <p className="text-center text-muted-foreground mt-8 italic">
             "Respect the fridge, respect the community"
           </p>
+
+          <div className="mt-12 text-center">
+            <h3 className="font-heading text-xl font-semibold mb-4">Follow Us</h3>
+            <div className="flex gap-4 justify-center">
+              <Button 
+                asChild
+                variant="outline"
+                size="lg"
+                data-testid="button-instagram"
+              >
+                <a 
+                  href="https://www.instagram.com/chcommunityfridge" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="gap-2"
+                >
+                  <FaInstagram className="w-5 h-5" />
+                  Instagram
+                </a>
+              </Button>
+              <Button 
+                asChild
+                variant="outline"
+                size="lg"
+                data-testid="button-facebook"
+              >
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61569472798213" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="gap-2"
+                >
+                  <FaFacebook className="w-5 h-5" />
+                  Facebook
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
     </div>

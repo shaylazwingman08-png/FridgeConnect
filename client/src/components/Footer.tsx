@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Heart } from "lucide-react";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -71,9 +72,31 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground mb-3">
               Want to donate food or volunteer? Contact us to learn more about how you can help.
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground mb-4">
               Email: <a href="mailto:unc.mawg@gmail.com" className="text-primary hover:underline" data-testid="link-email">unc.mawg@gmail.com</a>
             </p>
+            <div className="flex gap-3">
+              <a 
+                href="https://www.instagram.com/chcommunityfridge" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover-elevate active-elevate-2"
+                data-testid="link-instagram"
+                aria-label="Follow us on Instagram"
+              >
+                <FaInstagram className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://www.facebook.com/profile.php?id=61569472798213" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary hover-elevate active-elevate-2"
+                data-testid="link-facebook"
+                aria-label="Follow us on Facebook"
+              >
+                <FaFacebook className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
 

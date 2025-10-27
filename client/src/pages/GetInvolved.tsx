@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { HandHeart, Users, Heart, ExternalLink } from "lucide-react";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function GetInvolved() {
   return (
@@ -164,9 +165,47 @@ export default function GetInvolved() {
           <p className="text-muted-foreground mb-6">
             If you'd like to learn more about volunteer opportunities or have ideas for how to support the community fridges, we'd love to hear from you.
           </p>
-          <p className="text-lg">
+          <p className="text-lg mb-8">
             Email us at <a href="mailto:unc.mawg@gmail.com" className="text-primary hover:underline font-medium" data-testid="link-contact-email">unc.mawg@gmail.com</a>
           </p>
+
+          <div className="mt-8">
+            <h3 className="font-heading text-xl font-semibold mb-4">Follow Us on Social Media</h3>
+            <div className="flex gap-4 justify-center">
+              <Button 
+                asChild
+                variant="outline"
+                size="lg"
+                data-testid="button-instagram-involved"
+              >
+                <a 
+                  href="https://www.instagram.com/chcommunityfridge" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="gap-2"
+                >
+                  <FaInstagram className="w-5 h-5" />
+                  Instagram
+                </a>
+              </Button>
+              <Button 
+                asChild
+                variant="outline"
+                size="lg"
+                data-testid="button-facebook-involved"
+              >
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61569472798213" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="gap-2"
+                >
+                  <FaFacebook className="w-5 h-5" />
+                  Facebook
+                </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
     </div>
