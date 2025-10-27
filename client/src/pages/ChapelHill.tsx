@@ -128,14 +128,19 @@ export default function ChapelHill() {
               </div>
             </div>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <div>
-              <div className="bg-muted rounded-lg h-[400px] flex items-center justify-center">
-                <div className="text-center text-muted-foreground">
-                  <MapPin className="w-12 h-12 mx-auto mb-2" />
-                  <p>Map View</p>
-                  <p className="text-sm">123 Main Street, Chapel Hill, NC</p>
-                </div>
+              <div className="rounded-lg overflow-hidden h-[400px]">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.2758437887547!2d-79.07658!3d35.91066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc31c216fffff%3A0x1234567890abcdef!2s125%20W%20Main%20St%2C%20Carrboro%2C%20NC%2027510!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  width="100%"
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  data-testid="map-chapel-hill"
+                />
               </div>
             </div>
           </div>

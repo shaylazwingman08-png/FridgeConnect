@@ -3,6 +3,7 @@ import { MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import GuidelinesList from "@/components/GuidelinesList";
 import uncImage from '@assets/generated_images/UNC_campus_fridge_location_21a7b8c1.png';
+import uncMapImage from '@assets/union fridge loc_1761577618596.jpeg';
 
 const locationGuidelines = [
   "Located near the Student Union main entrance",
@@ -74,14 +75,15 @@ export default function UNC() {
               </div>
             </div>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <div>
-              <div className="bg-muted rounded-lg h-[400px] flex items-center justify-center">
-                <div className="text-center text-muted-foreground">
-                  <MapPin className="w-12 h-12 mx-auto mb-2" />
-                  <p>Map View</p>
-                  <p className="text-sm">Student Union, UNC Campus</p>
-                </div>
+              <div className="rounded-lg overflow-hidden h-[400px]">
+                <img 
+                  src={uncMapImage} 
+                  alt="UNC Union fridge location map" 
+                  className="w-full h-full object-cover"
+                  data-testid="map-unc"
+                />
               </div>
             </div>
           </div>
