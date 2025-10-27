@@ -12,6 +12,7 @@ export default function Navigation() {
     { path: "/about", label: "How it Works" },
     { path: "/chapel-hill", label: "Chapel Hill Fridge" },
     { path: "/unc", label: "UNC Union Fridge" },
+    { path: "/get-involved", label: "Get Involved" },
   ];
 
   const isActive = (path: string) => location === path;

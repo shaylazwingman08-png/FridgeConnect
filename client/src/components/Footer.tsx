@@ -59,7 +59,15 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-heading text-lg font-semibold mb-3">Get Involved</h3>
+            <h3 className="font-heading text-lg font-semibold mb-3">
+              <Link 
+                href="/get-involved"
+                data-testid="link-footer-get-involved"
+                className="hover:text-primary transition-colors"
+              >
+                Get Involved
+              </Link>
+            </h3>
             <p className="text-sm text-muted-foreground mb-3">
               Want to donate food or volunteer? Contact us to learn more about how you can help.
             </p>

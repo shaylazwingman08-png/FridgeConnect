@@ -9,6 +9,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import ChapelHill from "@/pages/ChapelHill";
 import UNC from "@/pages/UNC";
+import GetInvolved from "@/pages/GetInvolved";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/chapel-hill" component={ChapelHill} />
       <Route path="/unc" component={UNC} />
+      <Route path="/get-involved" component={GetInvolved} />
       <Route component={NotFound} />
     </Switch>
   );
