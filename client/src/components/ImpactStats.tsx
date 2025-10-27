@@ -1,5 +1,6 @@
 const stats = [
   { number: "200+", label: "lbs of food redistributed weekly" },
+  { number: "100%", label: "Free & Accessible" },
   { number: "2", label: "Locations" },
   { number: "100%", label: "Free & Accessible" },
   { number: "1", label: "dream of combatting food insecurity and waste"  }
