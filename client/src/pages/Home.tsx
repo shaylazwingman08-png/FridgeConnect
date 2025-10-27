@@ -18,7 +18,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Hero
         imageSrc={heroImage}
-        title="Feeding our neighbors together."
+        title="Feeding our neighbors, together."
         subtitle="Free, accessible food without questions or judgement. Take what you need, leave what you can."
       />
 

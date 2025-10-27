@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="font-heading text-lg font-semibold mb-3">Our Mission</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Providing free, accessible food to our community through mutual aid and solidarity. No questions asked, no judgment.
+              Providing free, accessible food to our community through mutual aid and solidarity. No questions, no judgment.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export default function Footer() {
               Want to donate food or volunteer? Contact us to learn more about how you can help.
             </p>
             <p className="text-sm text-muted-foreground">
-              Email: <a href="mailto:info@communityfridges.org" className="text-primary hover:underline" data-testid="link-email">info@communityfridges.org</a>
+              Email: <a href="mailto:unc.mawg@gmail.com" className="text-primary hover:underline" data-testid="link-email">unc.mawg@gmail.com</a>
             </p>
           </div>
         </div>

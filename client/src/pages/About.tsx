@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { HandHeart, Users, Leaf } from "lucide-react";
-import volunteersImage from '@assets/generated_images/Volunteers_organizing_fridge_contents_1c022462.png';
+import communityFridgeLogo from '@assets/Community Fridge Logo (1)_1761576122674.png';
 
 const howItWorksList = [
   {
@@ -69,8 +69,8 @@ export default function About() {
           </p>
           <div className="rounded-lg overflow-hidden">
             <img 
-              src={volunteersImage} 
-              alt="Volunteers organizing the community fridge" 
+              src={communityFridgeLogo} 
+              alt="Community Fridge Logo" 
               className="w-full h-auto"
             />
           </div>
