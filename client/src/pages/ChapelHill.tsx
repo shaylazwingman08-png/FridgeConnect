@@ -5,10 +5,8 @@ import GuidelinesList from "@/components/GuidelinesList";
 import chapelHillImage from '@assets/generated_images/Chapel_Hill_fridge_location_2bd035ac.png';
 
 const locationGuidelines = [
-  "Parking available on Main Street and surrounding side streets",
-  "The fridge is located on the sidewalk near the corner of Main and Elm",
-  "Well-lit area, safe for night access",
-  "Please be respectful of neighboring businesses"
+  "Parking available in Community Worx lot",
+  "Fridge is inside Community Empowerment Fund Office, above Community Worx"
 ];
 
 export default function ChapelHill() {
@@ -99,8 +97,8 @@ export default function ChapelHill() {
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-muted-foreground">
-                      125 West Main Suite 208<br />
-                      Carrboro, NC 27510 (above Community Worx)
+                      125 West Main Suite 200<br />
+                      Carrboro, NC 27510
                     </p>
                   </div>
                 </div>
