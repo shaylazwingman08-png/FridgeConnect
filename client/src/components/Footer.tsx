@@ -105,7 +105,7 @@ export default function Footer() {
             Made with <Heart className="w-4 h-4 text-primary fill-primary" /> for our community
           </p>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Community Fridges. All rights reserved.
+            © {new Date().getFullYear()} Chapel Hill Community Fridges. All rights reserved.
           </p>
         </div>
       </div>

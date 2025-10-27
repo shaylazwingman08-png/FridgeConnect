@@ -126,8 +126,11 @@ export default function GetInvolved() {
 
       {/* Current Volunteer Cleaning Form */}
       <section className="py-10 md:py-14 bg-card">
-        <div className="container mx-auto max-w-3xl px-4 md:px-6">
+        <div className="container mx-auto max-w-3xl px-4 md:px-6 text-center">
           <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Current Volunteer Cleaning Form</h2>
+            <p className="text-muted-foreground mb-6">
+            Please also fill out the 'Check in' form on the page of the fridge you visited after you clean it to make the status available to the community.
+             </p>
           
           <Card>
             <CardHeader>

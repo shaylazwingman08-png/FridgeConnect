@@ -53,6 +53,7 @@ export default function ChapelHill() {
               <Button 
                 variant="default"
                 size="lg"
+                className="px-12 py-6 text-lg"
                 onClick={() => {
                   setShowCheckIn(true);
                   setTimeout(() => {
