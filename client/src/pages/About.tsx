@@ -135,12 +135,12 @@ export default function About() {
           <div className="grid gap-8 md:grid-cols-2">
             <Card>
               <CardContent className="pt-6">
-                <h3 className="font-heading text-xl font-semibold mb-4 text-primary">✓ Accepted Items</h3>
+                <h3 className="font-heading text-xl font-semibold mb-4 text-green-600">✓ Accepted Items</h3>
                 <ul className="space-y-2">
                   {acceptedItems.map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-muted-foreground">{item}</span>
+                      <span className="text-green-600 mt-1">•</span>
+                      <span className="text-green-600">{item}</span>
                     </li>
                   ))}
                 </ul>
