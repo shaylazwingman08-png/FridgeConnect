@@ -49,7 +49,7 @@ const getInvolvedOptions = [
   {
     icon: Users,
     title: "Volunteer",
-    description: "Help with fridge maintenance, cleaning, and organization. All support is welcome!"
+    description: "Help with planning, and fridge maintenance, cleaning, and organization. All support is welcome!"
   },
   {
     icon: Leaf,
