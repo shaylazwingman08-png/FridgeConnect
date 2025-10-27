@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import GuidelinesList from "@/components/GuidelinesList";
-import uncImage from '@assets/generated_images/UNC_campus_fridge_location_21a7b8c1.png';
+import uncImage from '@assets/unc image_1761593853514.jpg';
 import uncMapImage from '@assets/union fridge loc_1761577618596.jpeg';
 
 const locationGuidelines = [

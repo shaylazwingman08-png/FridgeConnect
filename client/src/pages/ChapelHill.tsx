@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import GuidelinesList from "@/components/GuidelinesList";
-import chapelHillImage from '@assets/generated_images/Chapel_Hill_fridge_location_2bd035ac.png';
+import chapelHillImage from '@assets/chapel hill _1761593845423.avif';
 
 const locationGuidelines = [
   "Parking available in Community Worx lot",
