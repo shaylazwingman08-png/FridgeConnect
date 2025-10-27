@@ -62,7 +62,7 @@ export default function About() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Mission Section */}
-      <section className="py-16 md:py-20 bg-card">
+      <section className="py-10 md:py-14 bg-card">
         <div className="container mx-auto max-w-4xl px-4 md:px-6">
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-center mb-6">About Us</h1>
           <p className="text-lg text-muted-foreground leading-relaxed text-center mb-8">
@@ -79,7 +79,7 @@ export default function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-4xl px-4 md:px-6">
           <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-6">Our Story</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -97,7 +97,7 @@ export default function About() {
       </section>
 
       {/* How Our Fridges Work */}
-      <section className="py-16 md:py-20 bg-card">
+      <section className="py-10 md:py-14 bg-card">
         <div className="container mx-auto max-w-4xl px-4 md:px-6">
           <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-8 text-center">How Our Fridges Work</h2>
           
@@ -128,7 +128,7 @@ export default function About() {
       </section>
 
       {/* What You Can Donate */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-8 text-center">What You Can Donate</h2>
           
@@ -165,7 +165,7 @@ export default function About() {
       </section>
 
       {/* Get Involved */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
           <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-8 text-center">Get Involved</h2>
           

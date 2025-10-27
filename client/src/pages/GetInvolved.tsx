@@ -6,7 +6,7 @@ export default function GetInvolved() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="py-16 md:py-20 bg-card">
+      <section className="py-10 md:py-14 bg-card">
         <div className="container mx-auto max-w-4xl px-4 md:px-6">
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-center mb-6">Get Involved</h1>
           <p className="text-lg text-muted-foreground leading-relaxed text-center">
@@ -16,7 +16,7 @@ export default function GetInvolved() {
       </section>
 
       {/* Ways to Help */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Ways to Help</h2>
           
@@ -55,7 +55,7 @@ export default function GetInvolved() {
       </section>
 
       {/* Volunteer Interest Form */}
-      <section className="py-16 md:py-20 bg-card">
+      <section className="py-10 md:py-14 bg-card">
         <div className="container mx-auto max-w-3xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Volunteer Opportunities</h2>
           
@@ -89,7 +89,7 @@ export default function GetInvolved() {
       </section>
 
       {/* Support Our Mutual Aid Fund */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-3xl px-4 md:px-6">
           <Card className="border-primary/20">
             <CardHeader className="text-center">
@@ -124,7 +124,7 @@ export default function GetInvolved() {
       </section>
 
       {/* Current Volunteer Cleaning Form */}
-      <section className="py-16 md:py-20 bg-card">
+      <section className="py-10 md:py-14 bg-card">
         <div className="container mx-auto max-w-3xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Current Volunteer Cleaning Form</h2>
           
@@ -158,7 +158,7 @@ export default function GetInvolved() {
       </section>
 
       {/* Contact */}
-      <section className="py-16 md:py-20 bg-card">
+      <section className="py-10 md:py-14 bg-card">
         <div className="container mx-auto max-w-3xl px-4 md:px-6 text-center">
           <h2 className="font-heading text-2xl font-semibold mb-4">Have Questions?</h2>
           <p className="text-muted-foreground mb-6">

@@ -7,7 +7,7 @@ const stats = [
 
 export default function ImpactStats() {
   return (
-    <section className="py-16 md:py-20 bg-card">
+    <section className="py-10 md:py-14 bg-card">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat, index) => (

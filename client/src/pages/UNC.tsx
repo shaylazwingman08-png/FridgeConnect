@@ -32,7 +32,7 @@ export default function UNC() {
       </section>
 
       {/* Essential Information */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
           <div className="grid gap-8 md:grid-cols-2">
             {/* Location Info */}
@@ -91,7 +91,7 @@ export default function UNC() {
       </section>
 
       {/* Contact Forms */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-3xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-4 text-center">Get in Touch</h2>
           <p className="text-muted-foreground text-center mb-8">
@@ -146,7 +146,7 @@ export default function UNC() {
       </section>
 
       {/* Photo Gallery */}
-      <section className="py-16 md:py-20 bg-card">
+      <section className="py-10 md:py-14 bg-card">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Gallery</h2>
           <div className="grid gap-4 md:grid-cols-2">

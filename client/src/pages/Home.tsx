@@ -23,7 +23,7 @@ export default function Home() {
       />
 
       {/* Location Cards */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-7xl px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-4">Our Locations</h2>
@@ -52,7 +52,7 @@ export default function Home() {
       <ImpactStats />
 
       {/* Community Guidelines */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-3xl px-4 md:px-6">
           <div className="text-center mb-8">
             <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-4">Community Guidelines</h2>
