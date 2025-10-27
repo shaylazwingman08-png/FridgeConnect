@@ -120,7 +120,7 @@ export default function About() {
 
           <div className="mt-8 p-6 bg-primary/5 border border-primary/20 rounded-md">
             <p className="text-center font-medium">
-              Remember: <span className="text-primary">No questions asked, no judgment.</span> Everyone is welcome.
+              Remember: <span className="text-primary">No questions, no judgment.</span> Everyone is welcome.
             </p>
           </div>
         </div>
