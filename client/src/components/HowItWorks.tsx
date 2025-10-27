@@ -4,7 +4,7 @@ const steps = [
   {
     icon: MapPin,
     title: "Find a Fridge",
-    description: "Visit one of our two convenient locations in Chapel Hill or on the UNC campus. Both are accessible 24/7."
+    description: "Visit one of our two convenient locations in Chapel Hill or on the UNC campus."
   },
   {
     icon: Heart,
