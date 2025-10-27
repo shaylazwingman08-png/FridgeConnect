@@ -140,7 +140,7 @@ export default function About() {
                   {acceptedItems.map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">•</span>
-                      <span className="text-green-600">{item}</span>
+                      <span className="text-muted-foreground">{item}</span>
                     </li>
                   ))}
                 </ul>
