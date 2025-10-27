@@ -147,7 +147,7 @@ export default function ChapelHill() {
           <div className="rounded-lg overflow-hidden border">
             <iframe 
               className="airtable-embed" 
-              src="https://airtable.com/embed/appJuNvCqQkOpOqjC/pag9trJxPjBVtp03i/form" 
+              src="https://airtable.com/embed/applVpNxTchBzWog8/pag5Wkg50K3eraOQy/form" 
               frameBorder="0" 
               width="100%" 
               height="533" 
