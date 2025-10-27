@@ -1,8 +1,8 @@
 const stats = [
-  { number: "500+", label: "Meals Shared Monthly" },
+  { number: "200+", label: "lbs of food redistributed weekly" },
   { number: "2", label: "Locations" },
-  { number: "24/7", label: "Always Open" },
-  { number: "100%", label: "Free & Accessible" }
+  { number: "100%", label: "Free & Accessible" },
+  { number: "1", label: "dream of combatting food insecurity and waste"  }
 ];
 
 export default function ImpactStats() {
