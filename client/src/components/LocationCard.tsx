@@ -2,11 +2,12 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock } from "lucide-react";
 import { Link } from "wouter";
+import { ReactNode } from "react";
 
 interface LocationCardProps {
   title: string;
   address: string;
-  hours: string;
+  hours: ReactNode;
   link: string;
 }
 
