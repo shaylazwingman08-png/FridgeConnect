@@ -9,7 +9,8 @@ const howItWorksList = [
       "No ID required, no questions asked",
       "Take what you need for you and your family",
       "Some of the food is past the best-by date, but still has a few days until going bad. Use your best judgement, and throw out any food with signs of spoiling. ",
-      "Help keep items organized for others"
+      "Help keep items organized for others",
+      "After you take food, please use the 'Check in' button to update the fridge status on the page of the fridge you visited"
     ]
   },
   {
@@ -18,7 +19,8 @@ const howItWorksList = [
       "Donate fresh food you'd eat yourself",
       "Package items in clean, sealed containers",
       "Label homemade items with ingredients, date and any allergens",
-      "Avoid items in glass containers when possible"
+      "Avoid items in glass containers when possible",
+      "After you donate food or clean the fridge, please use the 'Check in' button to update the fridge status on the page of the fridge you visited"
     ]
   }
 ];
