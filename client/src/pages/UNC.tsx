@@ -138,23 +138,38 @@ export default function UNC() {
         </div>
       </section>
 
-      {/* Contact Form */}
+      {/* Contact Forms */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto max-w-3xl px-4 md:px-6">
           <h2 className="font-heading text-3xl font-semibold mb-4 text-center">Get in Touch</h2>
           <p className="text-muted-foreground text-center mb-8">
             Have questions, feedback, or want to help maintain this fridge? Let us know!
           </p>
-          <div className="rounded-lg overflow-hidden border">
-            <iframe 
-              className="airtable-embed" 
-              src="https://airtable.com/embed/appJuNvCqQkOpOqjC/shr2mPqmXSX630nRg?viewControls=on" 
-              frameBorder="0" 
-              width="100%" 
-              height="533" 
-              style={{ background: 'transparent', border: '1px solid #ccc' }}
-              data-testid="iframe-airtable-form"
-            />
+          
+          <div className="space-y-8">
+            <div className="rounded-lg overflow-hidden border">
+              <iframe 
+                className="airtable-embed" 
+                src="https://airtable.com/embed/appJuNvCqQkOpOqjC/shr2mPqmXSX630nRg?viewControls=on" 
+                frameBorder="0" 
+                width="100%" 
+                height="533" 
+                style={{ background: 'transparent', border: '1px solid #ccc' }}
+                data-testid="iframe-airtable-form-1"
+              />
+            </div>
+
+            <div className="rounded-lg overflow-hidden border">
+              <iframe 
+                className="airtable-embed" 
+                src="https://airtable.com/embed/appJuNvCqQkOpOqjC/pagA3gSslVqpzaD26/form" 
+                frameBorder="0" 
+                width="100%" 
+                height="533" 
+                style={{ background: 'transparent', border: '1px solid #ccc' }}
+                data-testid="iframe-airtable-form-2"
+              />
+            </div>
           </div>
         </div>
       </section>
