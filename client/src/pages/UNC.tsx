@@ -1,5 +1,6 @@
 import { MapPin, Clock, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import GuidelinesList from "@/components/GuidelinesList";
 import uncImage from '@assets/generated_images/UNC_campus_fridge_location_21a7b8c1.png';
 
@@ -159,7 +160,21 @@ export default function UNC() {
               />
             </div>
 
-            <div className="rounded-lg overflow-hidden border">
+            <div className="flex justify-center">
+              <Button 
+                variant="default"
+                size="lg"
+                onClick={() => {
+                  const checkInForm = document.querySelector('[data-testid="iframe-airtable-form-2"]');
+                  checkInForm?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+                data-testid="button-check-in"
+              >
+                Check in
+              </Button>
+            </div>
+
+            <div id="check-in-form" className="rounded-lg overflow-hidden border">
               <iframe 
                 className="airtable-embed" 
                 src="https://airtable.com/embed/appJuNvCqQkOpOqjC/pagA3gSslVqpzaD26/form" 

@@ -1,5 +1,6 @@
 import { MapPin, Clock, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import GuidelinesList from "@/components/GuidelinesList";
 import chapelHillImage from '@assets/generated_images/Chapel_Hill_fridge_location_2bd035ac.png';
 
@@ -43,6 +44,56 @@ export default function ChapelHill() {
         </div>
       </section>
 
+      {/* Contact Forms */}
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto max-w-3xl px-4 md:px-6">
+          <h2 className="font-heading text-3xl font-semibold mb-4 text-center">Latest Fridge Status</h2>
+          <p className="text-muted-foreground text-center mb-8">
+            The most recent updates on the Chapel Hill fridge, uploaded by community members. Click 'check-in' below to update fridge status.
+          </p>
+
+          <div className="space-y-8">
+            <div className="rounded-lg overflow-hidden border">
+              <iframe 
+                className="airtable-embed" 
+                src="https://airtable.com/embed/applVpNxTchBzWog8/shrVvzEnoSnprUKYw?viewControls=on" 
+                frameBorder="0" 
+                width="100%" 
+                height="533" 
+                style={{ background: 'transparent', border: '1px solid #ccc' }}
+                data-testid="iframe-airtable-form-1"
+              />
+            </div>
+
+            <div className="flex justify-center">
+              <Button 
+                variant="default"
+                size="lg"
+                onClick={() => {
+                  const checkInForm = document.querySelector('[data-testid="iframe-airtable-form-2"]');
+                  checkInForm?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+                data-testid="button-check-in"
+              >
+                Check in
+              </Button>
+            </div>
+
+            <div id="check-in-form" className="rounded-lg overflow-hidden border">
+              <iframe 
+                className="airtable-embed" 
+                src="https://airtable.com/embed/applVpNxTchBzWog8/pag5Wkg50K3eraOQy/form" 
+                frameBorder="0" 
+                width="100%" 
+                height="533" 
+                style={{ background: 'transparent', border: '1px solid #ccc' }}
+                data-testid="iframe-airtable-form-2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Essential Information */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
@@ -57,8 +108,8 @@ export default function ChapelHill() {
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-muted-foreground">
-                      123 Main Street<br />
-                      Chapel Hill, NC 27514
+                      125 West Main Suite 208<br />
+                      Carrboro, NC 27510 (above Community Worx)
                     </p>
                   </div>
                 </div>
@@ -133,42 +184,6 @@ export default function ChapelHill() {
                 </ul>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Forms */}
-      <section className="py-16 md:py-20">
-        <div className="container mx-auto max-w-3xl px-4 md:px-6">
-          <h2 className="font-heading text-3xl font-semibold mb-4 text-center">Get in Touch</h2>
-          <p className="text-muted-foreground text-center mb-8">
-            Have questions, feedback, or want to help maintain this fridge? Let us know!
-          </p>
-          
-          <div className="space-y-8">
-            <div className="rounded-lg overflow-hidden border">
-              <iframe 
-                className="airtable-embed" 
-                src="https://airtable.com/embed/applVpNxTchBzWog8/shrVvzEnoSnprUKYw?viewControls=on" 
-                frameBorder="0" 
-                width="100%" 
-                height="533" 
-                style={{ background: 'transparent', border: '1px solid #ccc' }}
-                data-testid="iframe-airtable-form-1"
-              />
-            </div>
-
-            <div className="rounded-lg overflow-hidden border">
-              <iframe 
-                className="airtable-embed" 
-                src="https://airtable.com/embed/applVpNxTchBzWog8/pag5Wkg50K3eraOQy/form" 
-                frameBorder="0" 
-                width="100%" 
-                height="533" 
-                style={{ background: 'transparent', border: '1px solid #ccc' }}
-                data-testid="iframe-airtable-form-2"
-              />
-            </div>
           </div>
         </div>
       </section>
