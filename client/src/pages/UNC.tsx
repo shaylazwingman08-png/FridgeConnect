@@ -148,11 +148,12 @@ export default function UNC() {
           <div className="rounded-lg overflow-hidden border">
             <iframe 
               className="airtable-embed" 
-              src="https://airtable.com/embed/appJuNvCqQkOpOqjC/pagA3gSslVqpzaD26/form" 
+              src="https://airtable.com/embed/appJuNvCqQkOpOqjC/shr2mPqmXSX630nRg?viewControls=on" 
               frameBorder="0" 
               width="100%" 
               height="533" 
               style={{ background: 'transparent', border: '1px solid #ccc' }}
+              data-testid="iframe-airtable-form"
             />
           </div>
         </div>
