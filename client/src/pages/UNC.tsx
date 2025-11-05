@@ -145,24 +145,6 @@ export default function UNC() {
         </div>
       </section>
 
-      {/* Photo Gallery */}
-      <section className="py-10 md:py-14 bg-card">
-        <div className="container mx-auto max-w-5xl px-4 md:px-6">
-          <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Gallery</h2>
-          <div className="grid gap-4 md:grid-cols-2">
-            <div className="rounded-lg overflow-hidden">
-              <img 
-                src={uncImage} 
-                alt="UNC campus community fridge exterior" 
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden bg-muted flex items-center justify-center h-[300px]">
-              <p className="text-muted-foreground">Community photos coming soon</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
