@@ -40,13 +40,13 @@ export default function Home() {
             <LocationCard
               title="Chapel Hill Fridge"
               address="125 West Main Suite 208, Carrboro, NC 27510 (above Community Worx)"
-              hours="Monday, Tuesday, Thursday: 10:30 AM - 4:30 PM Wednesday: 10:30 AM - 2:30PM"
+              hours={<>Monday, Tuesday, Thursday: 10:30 AM - 4:30 PM<br />Wednesday: 10:30 AM - 2:30 PM</>}
               link="/chapel-hill"
             />
             <LocationCard
               title="UNC Campus Fridge"
               address="UNC Student Union across from Student Life and Leadership Suite in 2501"
-              hours="Monday - Friday: 7:30 AM - 11:00 PM Saturday: 9:00 AM - 11:00 PM Sunday: 11:00 AM - 11:00 PM"
+              hours={<>Monday - Friday: 7:30 AM - 11:00 PM<br />Saturday: 9:00 AM - 11:00 PM<br />Sunday: 11:00 AM - 11:00 PM</>}
               link="/unc"
             />
           </div>
