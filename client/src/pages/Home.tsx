@@ -5,7 +5,7 @@ import ImpactStats from "@/components/ImpactStats";
 import GuidelinesList from "@/components/GuidelinesList";
 import { Button } from "@/components/ui/button";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-import heroImage from "@assets/generated_images/Community_members_at_fridge_hero_a53330b8.png";
+import heroImage from "@assets/IMG_6845_1762304350337.jpeg";
 
 const communityGuidelines = [
   "Take only what you need - leave some for others",
