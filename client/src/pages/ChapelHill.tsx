@@ -108,7 +108,7 @@ export default function ChapelHill() {
                   <Clock className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold mb-1">Hours</h3>
-                    <p className="text-muted-foreground">Open 24 hours a day, 7 days a week</p>
+                    <p className="text-muted-foreground">Monday, Tuesday, Thursday: 10:30 AM - 4:30 PM Wednesday: 10:30 AM - 2:30PM</p>
                   </div>
                 </div>
 
@@ -116,7 +116,7 @@ export default function ChapelHill() {
                   <Phone className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold mb-1">Contact</h3>
-                    <p className="text-muted-foreground">info@communityfridges.org</p>
+                    <p className="text-muted-foreground">919-200-0233</p>
                   </div>
                 </div>
               </div>
@@ -167,3 +167,4 @@ export default function ChapelHill() {
     </div>
   );
 }
+   

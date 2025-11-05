@@ -6,10 +6,9 @@ import uncImage from '@assets/unc image_1761593853514.jpg';
 import uncMapImage from '@assets/union fridge loc_1761577618596.jpeg';
 
 const locationGuidelines = [
-  "Located near the Student Union main entrance",
-  "Accessible to both students and community members",
-  "Campus parking available in Visitor Lot A",
-  "Well-lit area with regular campus security patrols"
+  "Located across from Student Life and Leadership Office, Suite 2501",
+  "Available to both students and community members",
+  "Disability accessible entrances and exits",
 ];
 
 export default function UNC() {
@@ -45,8 +44,8 @@ export default function UNC() {
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-muted-foreground">
-                      Student Union Building<br />
-                      UNC Campus<br />
+                      Frank Porter Graham Student Union<br />
+                      209 South Road<br />
                       Chapel Hill, NC 27599
                     </p>
                   </div>
@@ -56,7 +55,7 @@ export default function UNC() {
                   <Clock className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold mb-1">Hours</h3>
-                    <p className="text-muted-foreground">Open 24 hours a day, 7 days a week</p>
+                    <p className="text-muted-foreground">Monday - Friday: 7:30 AM - 11:00 PM<br /> Saturday: 9:00 AM - 11:00 PM<br /> Sunday: 11:00 AM - 11:00 PM</p>
                   </div>
                 </div>
 
@@ -64,7 +63,7 @@ export default function UNC() {
                   <Phone className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold mb-1">Contact</h3>
-                    <p className="text-muted-foreground">info@communityfridges.org</p>
+                    <p className="text-muted-foreground">(919) 962-2285</p>
                   </div>
                 </div>
               </div>
