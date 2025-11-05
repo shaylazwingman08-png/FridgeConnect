@@ -186,7 +186,7 @@ export default function About() {
           <div className="mt-12 text-center">
             <p className="text-muted-foreground mb-4">Want to help or learn more?</p>
             <p className="text-lg">
-              Email us at <a href="mailto:info@communityfridges.org" className="text-primary hover:underline font-medium" data-testid="link-contact-email">info@communityfridges.org</a>
+              Email us at <a href="mailto:unc.mawg@gmail.com" className="text-primary hover:underline font-medium" data-testid="link-contact-email">unc.mawg@gmail.com</a>
             </p>
           </div>
         </div>
