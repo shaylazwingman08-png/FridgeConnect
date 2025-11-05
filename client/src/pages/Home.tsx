@@ -25,7 +25,7 @@ export default function Home() {
       />
 
       {/* Location Cards */}
-      <section className="py-10 md:py-14">
+      <section id="locations" className="py-10 md:py-14">
         <div className="container mx-auto max-w-7xl px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-semibold mb-4">

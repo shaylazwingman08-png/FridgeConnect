@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 
 interface HeroProps {
   imageSrc: string;
@@ -9,6 +9,16 @@ interface HeroProps {
 }
 
 export default function Hero({ imageSrc, title, subtitle, showCTA = true }: HeroProps) {
+  const [location] = useLocation();
+  const isHomePage = location === '/';
+
+  const handleFindFridge = () => {
+    const locationsSection = document.getElementById('locations');
+    if (locationsSection) {
+      locationsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section className="relative h-[80vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       <div 
@@ -27,16 +37,28 @@ export default function Hero({ imageSrc, title, subtitle, showCTA = true }: Hero
         
         {showCTA && (
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/chapel-hill">
+            {isHomePage ? (
               <Button 
                 size="lg" 
                 variant="default"
                 className="text-lg"
+                onClick={handleFindFridge}
                 data-testid="button-find-fridge"
               >
                 Find a Fridge
               </Button>
-            </Link>
+            ) : (
+              <Link href="/chapel-hill">
+                <Button 
+                  size="lg" 
+                  variant="default"
+                  className="text-lg"
+                  data-testid="button-find-fridge"
+                >
+                  Find a Fridge
+                </Button>
+              </Link>
+            )}
             <Link href="/about">
               <Button 
                 size="lg" 
