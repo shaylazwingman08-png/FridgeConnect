@@ -30,6 +30,62 @@ export default function UNC() {
         </div>
       </section>
 
+      {/* Contact Forms */}
+      <section className="py-10 md:py-14">
+        <div className="container mx-auto max-w-3xl px-4 md:px-6">
+          <h2 className="font-heading text-3xl font-semibold mb-4 text-center">Latest Fridge Status</h2>
+          <p className="text-muted-foreground text-center mb-8">
+            The most recent updates on the UNC fridge, uploaded by community members. Click 'check-in' below to update fridge status.
+          </p>
+          
+          <div className="space-y-8">
+            <div className="rounded-lg overflow-hidden border">
+              <iframe 
+                className="airtable-embed" 
+                src="https://airtable.com/embed/appJuNvCqQkOpOqjC/shr2mPqmXSX630nRg?viewControls=on" 
+                frameBorder="0" 
+                width="100%" 
+                height="533" 
+                style={{ background: 'transparent', border: '1px solid #ccc' }}
+                data-testid="iframe-airtable-form-1"
+              />
+            </div>
+
+            <div className="flex justify-center">
+              <Button 
+                variant="default"
+                size="lg"
+                className="px-12 py-6 text-lg"
+                onClick={() => {
+                  setShowCheckIn(true);
+                  setTimeout(() => {
+                    const checkInForm = document.querySelector('[data-testid="iframe-airtable-form-2"]');
+                    checkInForm?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }, 100);
+                }}
+                data-testid="button-check-in"
+              >
+                Check in
+              </Button>
+            </div>
+
+            {showCheckIn && (
+              <div id="check-in-form" className="rounded-lg overflow-hidden border">
+                <iframe 
+                  className="airtable-embed" 
+                  src="https://airtable.com/embed/appJuNvCqQkOpOqjC/pagA3gSslVqpzaD26/form" 
+                  frameBorder="0" 
+                  width="100%" 
+                  height="533" 
+                  style={{ background: 'transparent', border: '1px solid #ccc' }}
+                  data-testid="iframe-airtable-form-2"
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
       {/* Essential Information */}
       <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-5xl px-4 md:px-6">
@@ -85,62 +141,6 @@ export default function UNC() {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Forms */}
-      <section className="py-10 md:py-14">
-        <div className="container mx-auto max-w-3xl px-4 md:px-6">
-          <h2 className="font-heading text-3xl font-semibold mb-4 text-center">Get in Touch</h2>
-          <p className="text-muted-foreground text-center mb-8">
-            Have questions, feedback, or want to help maintain this fridge? Let us know!
-          </p>
-          
-          <div className="space-y-8">
-            <div className="rounded-lg overflow-hidden border">
-              <iframe 
-                className="airtable-embed" 
-                src="https://airtable.com/embed/appJuNvCqQkOpOqjC/shr2mPqmXSX630nRg?viewControls=on" 
-                frameBorder="0" 
-                width="100%" 
-                height="533" 
-                style={{ background: 'transparent', border: '1px solid #ccc' }}
-                data-testid="iframe-airtable-form-1"
-              />
-            </div>
-
-            <div className="flex justify-center">
-              <Button 
-                variant="default"
-                size="lg"
-                className="px-12 py-6 text-lg"
-                onClick={() => {
-                  setShowCheckIn(true);
-                  setTimeout(() => {
-                    const checkInForm = document.querySelector('[data-testid="iframe-airtable-form-2"]');
-                    checkInForm?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }, 100);
-                }}
-                data-testid="button-check-in"
-              >
-                Check in
-              </Button>
-            </div>
-
-            {showCheckIn && (
-              <div id="check-in-form" className="rounded-lg overflow-hidden border">
-                <iframe 
-                  className="airtable-embed" 
-                  src="https://airtable.com/embed/appJuNvCqQkOpOqjC/pagA3gSslVqpzaD26/form" 
-                  frameBorder="0" 
-                  width="100%" 
-                  height="533" 
-                  style={{ background: 'transparent', border: '1px solid #ccc' }}
-                  data-testid="iframe-airtable-form-2"
-                />
-              </div>
-            )}
           </div>
         </div>
       </section>
