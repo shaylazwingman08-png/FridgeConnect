@@ -5,6 +5,7 @@ import GuidelinesList from "@/components/GuidelinesList";
 import chapelHillImage from '@assets/chapel hill _1761593845423.avif';
 
 const locationGuidelines = [
+  "Fridge is restocked on Tuesday afternoons and as donations are received. Check our Instagram, Facebook, or the status above for updates.",
   "Parking available in Community Worx lot",
   "Fridge is inside Community Empowerment Fund Office, above Community Worx"
 ];

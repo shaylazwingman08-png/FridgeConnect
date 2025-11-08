@@ -89,7 +89,7 @@ export default function About() {
               1 in 10 residents of Orange County experience food insecurity annually, and 1 in 5 students at UNC Chapel Hill have experienced food insecurity in the past month. While around 40% of the US food supply is wasted, our neighbors are going hungry.
             </p>
             <p>
-              That's why the Mutual Aid Working Group (MAWG), a community of students at UNC Chapel Hill, founded the Chapel Hill Community Fridge network in 2024. Our fridges save and redistribute surplus food from local sources, providing free, accessible meals to the community. We require no paperwork, idendification, or proof of need and operate on a simple principle: take what you need, leave what you can.
+              That's why the Mutual Aid Working Group (MAWG), a community of students at UNC Chapel Hill, founded the Chapel Hill Community Fridge network in 2024 through the Campus Y. Our fridges save and redistribute surplus food from local sources, providing free, accessible meals to the community. We require no paperwork, idendification, or proof of need and operate on a simple principle: take what you need, leave what you can.
             </p>
             <p>
               What began as a grassroots effort to address food insecurity and food waste has grown into a network of two fridges. After receiving a generous grant from the Carolina Parents Council, our second fridge was placed in the UNC Student Union in 2025. Our fridges are stocked and cleaned multiple times per week by students and community members who believe in taking care of each other unconditionally. If you would like to help in any way, please visit our 'Get Involved' page.
