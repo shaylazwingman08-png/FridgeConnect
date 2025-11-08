@@ -12,6 +12,10 @@ interface LocationCardProps {
 }
 
 export default function LocationCard({ title, address, hours, link }: LocationCardProps) {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <Card className="hover-elevate transition-all">
       <CardHeader>
@@ -28,7 +32,7 @@ export default function LocationCard({ title, address, hours, link }: LocationCa
         </div>
       </CardContent>
       <CardFooter>
-        <Link href={link}>
+        <Link href={link} onClick={handleClick}>
           <Button 
             variant="default" 
             className="w-full"
