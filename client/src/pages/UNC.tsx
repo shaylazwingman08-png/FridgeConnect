@@ -6,6 +6,7 @@ import uncImage from '@assets/unc image_1761593853514.jpg';
 import uncMapImage from '@assets/union fridge loc_1761577618596.jpeg';
 
 const locationGuidelines = [
+  "Fridge is restocked on Saturday, Sunday, and Thursday afternoons and as donations are received. Check our Instagram, Facebook, or the status above for upda"
   "Located across from Student Life and Leadership Office, Suite 2501",
   "Available to both students and community members",
   "Disability accessible entrances and exits",
