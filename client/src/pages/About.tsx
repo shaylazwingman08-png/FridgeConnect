@@ -38,8 +38,7 @@ const notAccepted = [
   "Leftovers you have eaten from",
   "Items in glass containers",
   "Opened packages",
-  "Alcohol or tobacco products",
-  "Raw meat or poultry"
+  "Alcohol or tobacco products"
 ];
 
 const getInvolvedOptions = [
