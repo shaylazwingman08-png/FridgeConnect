@@ -99,12 +99,11 @@ export default function GetInvolved() {
               </div>
               <CardTitle className="text-2xl">Support the Campus Y Mutual Aid Fund</CardTitle>
               <CardDescription>
-                Your financial contribution helps us maintain the fridges, purchase supplies, and expand our reach
+                Monetary contributions will directly support students and community members through mutual aid events, projects, and resources.
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Every donation, no matter the size, helps us continue providing free, accessible food to our community. Funds go directly toward fridge maintenance, electricity costs, and purchasing fresh food.
               </p>
               <Button 
                 asChild
@@ -127,7 +126,7 @@ export default function GetInvolved() {
       {/* Current Volunteer Cleaning Form */}
       <section className="py-10 md:py-14 bg-card">
         <div className="container mx-auto max-w-3xl px-4 md:px-6 text-center">
-          <h2 className="font-heading text-3xl font-semibold mb-8 text-center">Current Volunteer Cleaning Form</h2>
+          <h2 className="font-heading text-3xl font-semibold mb-8 text-center">CURRENT Volunteer Cleaning Form</h2>
             <p className="text-muted-foreground mb-6">
             Please also fill out the 'Check in' form on the page of the fridge you visited after you clean it to make the status available to the community.
              </p>
