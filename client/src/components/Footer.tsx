@@ -3,6 +3,10 @@ import { Heart } from "lucide-react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <footer className="border-t bg-card mt-auto">
       <div className="container mx-auto max-w-7xl px-4 py-12 md:px-6">
@@ -22,6 +26,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/" 
+                  onClick={scrollToTop}
                   data-testid="link-footer-home"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
@@ -31,6 +36,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/about" 
+                  onClick={scrollToTop}
                   data-testid="link-footer-about"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
@@ -40,6 +46,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/chapel-hill" 
+                  onClick={scrollToTop}
                   data-testid="link-footer-chapel-hill"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
@@ -49,6 +56,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/unc" 
+                  onClick={scrollToTop}
                   data-testid="link-footer-unc"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
@@ -63,6 +71,7 @@ export default function Footer() {
             <h3 className="font-heading text-lg font-semibold mb-3">
               <Link 
                 href="/get-involved"
+                onClick={scrollToTop}
                 data-testid="link-footer-get-involved"
                 className="hover:text-primary transition-colors"
               >
